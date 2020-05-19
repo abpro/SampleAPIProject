@@ -1,0 +1,229 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-16T10:41:11.190Z",
+        "line": 15,
+        "name": "Verify that Add place functionality is working",
+        "description": "",
+        "id": "validating-place-api;verify-that-add-place-functionality-is-working;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1234000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Add Place Payload",
+            "match": {
+              "location": "stepdefinitionsfornp.StepDefinitions.add_Place_Payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1555000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User calls \"AddPlaceAPI\" with POST http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitionsfornp.StepDefinitions.user_calls_with_POST_http_request(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "stepdefinitionsfornp.StepDefinitions.api_call_is_success_with_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitionsfornp.StepDefinitions.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "\"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitionsfornp.StepDefinitions.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "print this \"Falana\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Falana\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitionsfornp.StepDefinitions.print_this(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-16T10:41:14.077Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitionsfornp.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Verify the delete place API",
+        "description": "",
+        "id": "validating-place-api;verify-the-delete-place-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User asks to print \"This\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"This\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefinitionsfornp.StepDefinitions.user_asks_to_print(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "say wow",
+            "match": {
+              "location": "stepdefinitionsfornp.StepDefinitions.say_wow()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "\"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitionsfornp.StepDefinitions.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "print this \"accha\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"accha\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitionsfornp.StepDefinitions.print_this(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeletePlace"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Place API",
+    "description": "",
+    "id": "validating-place-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/featurefiles/PlaceValidation.feature",
+    "tags": []
+  }
+]

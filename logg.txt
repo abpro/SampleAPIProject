@@ -1,0 +1,47 @@
+Request method:	POST
+Request URI:	http://216.10.245.166/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "location": {
+        "lat": -38.383494,
+        "lng": 33.427362
+    },
+    "accuracy": 50,
+    "name": "Frontline house",
+    "phone_number": "(+91) 983 893 3937",
+    "types": [
+        "shoe park",
+        "shop"
+    ],
+    "website": null,
+    "language": "French-IN",
+    "address": "29, side layout, cohen 09"
+}
+HTTP/1.1 200 OK
+Date: Sat, 16 May 2020 10:43:57 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "c9d151d44ba433897f7dde0d0ff7150f",
+    "scope": "APP",
+    "reference": "172905a824169c9b86635c73b9da4b5d172905a824169c9b86635c73b9da4b5d",
+    "id": "172905a824169c9b86635c73b9da4b5d"
+}
