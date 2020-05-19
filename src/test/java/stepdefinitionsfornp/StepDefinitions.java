@@ -62,7 +62,7 @@ public class StepDefinitions extends Utils {
 	public void print_this(String name) {
 	    // Write code here that turns the phrase above into concrete actions
 	    System.out.println(name);
-	    System.out.println("String asserted");
+	    System.out.println("String asserted now");
 	}
 	
 	@When("User asks to print {string}")
