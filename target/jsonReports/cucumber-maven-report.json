@@ -3,7 +3,18 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-05-16T10:43:53.364Z",
+        "start_timestamp": "2020-11-03T17:06:46.120Z",
+        "before": [
+          {
+            "result": {
+              "duration": 343000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitionsfornp.Hooks.beforeScenario()"
+            }
+          }
+        ],
         "line": 15,
         "name": "Verify that Add place functionality is working",
         "description": "",
@@ -13,7 +24,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2101000000,
+              "duration": 2879000000,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 1917000000,
+              "duration": 2752000000,
               "status": "passed"
             },
             "line": 7,
@@ -43,7 +54,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 8,
@@ -126,17 +136,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-05-16T10:43:57.458Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitionsfornp.Hooks.beforeScenario()"
-            }
-          }
-        ],
+        "start_timestamp": "2020-11-03T17:06:52.487Z",
         "line": 19,
         "name": "Verify the delete place API",
         "description": "",
@@ -146,7 +146,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 20,
